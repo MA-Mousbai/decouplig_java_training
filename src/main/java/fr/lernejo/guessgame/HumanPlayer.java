@@ -16,11 +16,9 @@ public class HumanPlayer implements Player{
     @Override
     public void respond(boolean lowerOrGreater) {
         if (lowerOrGreater) {
-            logger.log("le joueur n'as pas trouver le bon âge");
-            System.out.println("Coulé! Essaie encore.");
+            this.logger.log("Raté! Le nombre cherché est plus grand");
         } else {
-            logger.log("le joueur a gagné");
-            System.out.println("Bravo! Tu as trouvé l'âge du capitaine.");
+            this.logger.log("Raté! Le nombre cherché est plus petit");
         }
     }
 }
